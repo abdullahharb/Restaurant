@@ -25,11 +25,6 @@ const io = new Server(server, { cors: { origin: '*' } })
 app.set('io', io)
 orderSocket(io)
 
-
-// app.listen(5000, () => {
-//     console.log('server is running.....')
-// })
-
 process.on('unhandledRejection', (err) => {
     console.log('unhandledRejection', err);
 })
